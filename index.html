@@ -16,11 +16,9 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code:
-blah, blah, blah,
+Brief Description of Goal of Code: To diagnose whether or not the symptoms are for allergy or cold // updated reasoning 
  
 Known Issues:
-blah, blah, blah, blah
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -40,19 +38,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         var cold_count = 0;
 
 
-        function allergyAdd(){ // this function adds 1 to cold value \\ 
+        function allergyAdd(){ // this function adds 1 to cold value 
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
 
 }
 
-        function coldAdd(){ // this function adds 1 to cold value// 
+        function coldAdd(){ // this function adds 1 to cold value
             cold_count = cold_count + 1;
  }
 	/* this function produces actual result from the percent chance calculation. */ 
 function resultPercentage() {
 	var allergyPercentage = allergy_count + "/6";
+	alert(allergyPercentage); // added for pop up box
 	var coldPercentage + cold_count + "6/";
+	alert(coldPercentage); // added for pop up box
 	var resultText = document.getElementById("results");
 	resultsText.innerHTML = "Probability it is allergies = " allergy percent + "<br>
 	
