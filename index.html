@@ -49,9 +49,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  }
 	/* this function produces actual result from the percent chance calculation. */ 
 function resultPercentage() {
-	var allergyPercentage = allergy_count + "/6";
+	var allergyPercentage = allergy_count /6 // deleted ""
 	alert(allergyPercentage); // added for pop up box
-	var coldPercentage + cold_count + "6/";
+	var coldPercentage + cold_count 6/ // delted ""
 	alert(coldPercentage); // added for pop up box
 	var resultText = document.getElementById("results");
 	resultsText.innerHTML = "Probability it is allergies = " allergy percent + "<br>
