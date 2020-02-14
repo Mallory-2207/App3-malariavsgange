@@ -147,17 +147,42 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">
         <p></p> <!-- deleted "question 1 here -->     
     	</div>
-
-	
 </div>
 
-<div class="page" id="five"> <!-- added entire page for results-->
+<div class="page" id="five"> 
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+		<h1>Question 5</h1>
+</div>
+	        <p>Are your symtoms worse in certian areas?</p> <!-- added question --> 
+		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5, also added allergy que;fixed que to move to page 4 -->
+		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5, also added cold que; fixed que to move to page 4 -->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p></p> <!-- deleted "question 1 here -->     
+    	</div>
+</div>
+
+<div class="page" id="six"> 
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+		<h1>Question 6</h1>
+</div>
+	        <p>Do you feed achy?</p> <!-- added question --> 
+		<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6, also added allergy que;fixed que to move to page 4 -->
+		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6, also added cold que; fixed que to move to page 4 -->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p></p> <!-- deleted "question 1 here -->     
+    	</div>
+
+<div class="page" id="seven"> <!-- added entire page for results-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 		
 	</div>
 	      
-		<a href="#six" class="w3-btn w3-black"> results </a> <!-- added results button; also replaved the page two cue with a page 6 cue -->
+		<a href="#eight" class="w3-btn w3-black"> results </a> <!-- added results button; also replaved the page two cue with a page 6 cue -->
 		
 	</div>
 	
