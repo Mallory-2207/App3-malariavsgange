@@ -15,7 +15,7 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To diagnose whether or not the symptoms are for malaria or gange fever // updated reasoning 
+Brief Description of Goal of Code: To diagnose whether or not the symptoms are for malaria or dengue fever // updated reasoning 
  
 Known Issues: trouble getting the results page to code correctly // updated issues
 
@@ -33,7 +33,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
         var malaria_count = 0; //updated to say malaria
-        var gange_count = 0; //updated to say gange
+        var dengue_count = 0; //updated to say gange
 
 //this was updated to code for malaria not allergies
         function malariaAdd(){ 
@@ -41,17 +41,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		//alert(malaria_count);
 
 } //this was updated to code for gange count not cold
-	function gangeAdd(){ // this function adds 1 to gange value
-             gange_count = gange_count + 1;
-		//alert(gange_count);
- } //was updated to code for percentage gange and malaria, not cold and allergies
+	function dengueAdd(){ // this function adds 1 to gange value
+             dengue_count = dengue_count + 1;
+		//alert(dengue_count);
+		
+ } //was updated to code for percentage dengue and malaria, not cold and allergies
 function resultPercentage() {
 	var malariaPercentage = malaria_count /6 *100; // deleted "" added ; added multiple by 100
 	alert(malariaPercentage); // added for pop up box
-	var coldPercentage = gange_count /6 *100; // delted "" added ; added = added multiple by 100
-	alert(gangePercentage); // added for pop up box
+	var denguePercentage = dengue_count /6 *100; // delted "" added ; added = added multiple by 100
+	alert(denguePercentage); // added for pop up box
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent it's likely malaria =" + malaria_count /6 *100 + "<br> Percent it's likely gange fever =" + gange_count /6 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
+	resultText.innerHTML = "Percent it's likely malaria =" + malaria_count /6 *100 + "<br> Percent it's likely dengue fever =" + dengue_count /6 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
 	
 	
 
@@ -89,9 +90,9 @@ function resultPercentage() {
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have malaria or gange fever? Answer a few short questions to find out.</p> <!--changed to target the malaria vs gange question -->
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<a href="#one" class="w3-btn w3-black w3-round"> Get Started </a>
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
