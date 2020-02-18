@@ -99,7 +99,7 @@ function resultPercentage() {
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <div class="page" id="one">
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-purple"> <!--changed header color to purple-->
 		<h1>Question 1</h1>
 		
 	</div>
@@ -114,13 +114,13 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="two">
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- added id="header"-->
+	<div id="header" class="w3-container w3-flat-purple"> <!-- added id="header" also changed color to purple-->
 		<h1>Question 2</h1>
 		
 	</div>
-	        <p>Do you have a fever?</p> <!-- added question -->  
-		<a href="#three" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 2, also added cold que -->
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 2, also added allergy que -->
+	        <p>Do you had short, recurrent spells of chills?</p> <!-- added question; changed question to "Do you had short, recurrent spells of chills?" -->  
+		<a href="#three" onclick="dangueAdd();"  class="w3-btn w3-grey"> yes </a> <!-- added yes button for question 2, also added cold que -->
+		<a href="#three" onclick="malariaAdd();" class="w3-btn w3-grey"> no </a> <!-- added no button for question 2, also added allergy que -->
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -129,13 +129,13 @@ function resultPercentage() {
 </div>
 	
 <div class="page" id="three">
-	<div id= "header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there. also added id= "header" -->
+	<div id= "header" class="w3-container w3-flat-purple"> <!-- delted portion that wasnt suppose to be there. also added id= "header"; also changed color to purple-->
 		<h1>Question 3</h1>
 		
 	</div>
-	        <p>Do you have a sore throat?</p> <!-- added question --> 
-		<a href="#four" onclick="coldAdd();"  class="w3-btn w3-black"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
+	        <p>Do you have swelling of the joints?</p> <!-- added question; changed question to "do you have swelling of the joints?" --> 
+		<a href="#four" onclick="dengueAdd();"  class="w3-btn w3-grey"> yes </a> <!-- added yes button for question 3, also added cold que; fixed que to move to page 3 -->
+		<a href="#four" onclick="malariaAdd();" class="w3-btn w3-grey"> no </a> <!-- added no button for question 3, also added allergy que; fixed que to move to page 3 --> 
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -148,8 +148,8 @@ function resultPercentage() {
 		<h1>Question 4</h1>
 </div>
 	        <p>Are your symptoms seasonal or chronic?</p> <!-- added question --> 
-		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 4, also added allergy que;fixed que to move to page 4 -->
-		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 4, also added cold que; fixed que to move to page 4 -->
+		<a href="#five" onclick="dengueAdd();" class="w3-btn w3-grey"> yes </a> <!-- added yes button for question 4, also added allergy que;fixed que to move to page 4 changed color of buttons-->
+		<a href="#five" onclick="malariaAdd();" class="w3-btn w3-grey"> no </a> <!-- added no button for question 4, also added cold que; fixed que to move to page 4 changed color of buttons -->
 	</div>
 	
     	<div id="content" class="w3-container">
