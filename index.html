@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
-Author 2
+Mallory Hull //changed the author to myself
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -16,7 +15,7 @@ Research Educator:
 Timothy Riedel
 triedel@utexas.edu
  
-Brief Description of Goal of Code: To diagnose whether or not the symptoms are for allergy or cold // updated reasoning 
+Brief Description of Goal of Code: To diagnose whether or not the symptoms are for malaria or gange fever // updated reasoning 
  
 Known Issues: trouble getting the results page to code correctly // updated issues
 
@@ -33,27 +32,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var malaria_count = 0; //updated to say malaria
+        var gange_count = 0; //updated to say gange
 
+//this was updated to code for malaria not allergies
+        function malariaAdd(){ 
+            malaria_count = malaria_count + 1;
+		//alert(malaria_count);
 
-        function allergyAdd(){ 
-            allergy_count = allergy_count + 1;
-		//alert(allergy_count);
-
-} 
-	function coldAdd(){ // this function adds 1 to cold value
-      
-            cold_count = cold_count + 1;
-		//alert(cold_count);
- }
+} //this was updated to code for gange count not cold
+	function gangeAdd(){ // this function adds 1 to gange value
+             gange_count = gange_count + 1;
+		//alert(gange_count);
+ } //was updated to code for percentage gange and malaria, not cold and allergies
 function resultPercentage() {
-	var allergyPercentage = allergy_count /6 *100; // deleted "" added ; added multiple by 100
-	alert(allergyPercentage); // added for pop up box
-	var coldPercentage = cold_count /6 *100; // delted "" added ; added = added multiple by 100
-	alert(coldPercentage); // added for pop up box
+	var malariaPercentage = malaria_count /6 *100; // deleted "" added ; added multiple by 100
+	alert(malariaPercentage); // added for pop up box
+	var coldPercentage = gange_count /6 *100; // delted "" added ; added = added multiple by 100
+	alert(gangePercentage); // added for pop up box
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent it's likely allergies =" + allergy_count /6 *100 + "<br> Percent it's likely a cold =" + cold_count /6 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
+	resultText.innerHTML = "Percent it's likely malaria =" + malaria_count /6 *100 + "<br> Percent it's likely gange fever =" + gange_count /6 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
 	
 	
 
