@@ -114,7 +114,7 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="two">
-	<div id="header" class="w3-container w3-flat-purple"> <!-- added id="header" also changed color to purple-->
+	<div id="header" class="w3-container w3-flat-black"> <!-- added id="header" also changed color to black-->
 		<h1>Question 2</h1>
 		
 	</div>
@@ -129,7 +129,7 @@ function resultPercentage() {
 </div>
 	
 <div class="page" id="three">
-	<div id= "header" class="w3-container w3-flat-purple"> <!-- delted portion that wasnt suppose to be there. also added id= "header"; also changed color to purple-->
+	<div id= "header" class="w3-container w3-flat-black"> <!-- delted portion that wasnt suppose to be there. also added id= "header"; also changed color to purple-->
 		<h1>Question 3</h1>
 		
 	</div>
@@ -144,53 +144,28 @@ function resultPercentage() {
 </div>
 
 <div class="page" id="four"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
+	<div id="header" class="w3-container w3-flat-black"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
 		<h1>Question 4</h1>
 </div>
-	        <p>Are your symptoms seasonal or chronic?</p> <!-- added question --> 
-		<a href="#five" onclick="dengueAdd();" class="w3-btn w3-grey"> yes </a> <!-- added yes button for question 4, also added allergy que;fixed que to move to page 4 changed color of buttons-->
-		<a href="#five" onclick="malariaAdd();" class="w3-btn w3-grey"> no </a> <!-- added no button for question 4, also added cold que; fixed que to move to page 4 changed color of buttons -->
+	        <p>Do you feel side pain?</p> <!-- added question changed question to "do you feel side pain?"--> 
+		<a href="#six" onclick="malariaAdd();" class="w3-btn w3-grey"> yes </a> <!-- added yes button for question 4, also added allergy que;fixed que to move to page 4 changed color of buttons-->
+		<a href="#six" onclick="dengueAdd();" class="w3-btn w3-grey"> no </a> <!-- added no button for question 4, also added cold que; fixed que to move to page 4 changed color of buttons -->
 	</div>
 	
     	<div id="content" class="w3-container">
         <p></p> <!-- deleted "question 1 here -->     
     	</div>
 </div>
-
-<div class="page" id="five"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
-		<h1>Question 5</h1>
-</div>
-	        <p>Are your symtoms worse in certian areas?</p> <!-- added question --> 
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 5, also added allergy que;fixed que to move to page 4 -->
-		<a href="#six" onclick="coldAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 5, also added cold que; fixed que to move to page 4 -->
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p></p> <!-- deleted "question 1 here -->     
-    	</div>
-</div>
-
-<div class="page" id="six"> 
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- delted portion that wasnt suppose to be there, also added id="header" -->
-		<h1>Question 6</h1>
-</div>
-	        <p>Do you feed achy?</p> <!-- added question --> 
-		<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> yes </a> <!-- added yes button for question 6, also added allergy que;fixed que to move to page 4 -->
-		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> no </a> <!-- added no button for question 6, also added cold que; fixed que to move to page 4 -->
-	</div>
-	
-    	<div id="content" class="w3-container">
-        <p></p> <!-- deleted "question 1 here -->     
+    
     	</div>
 
-<div class="page" id="seven"> <!-- added entire page for results-->
-	<div id="header" class="w3-container w3-flat-carrot">
+<div class="page" id="five"> <!-- added entire page for results changed the id to five-->
+	<div id="header" class="w3-container w3-flat-black"> <!-- changed header to black-->
 		<h1>Results</h1>
 		
 	</div>
 	      
-		<a href="#eight" onclick="resultPercentage();" class="w3-btn w3-black"> results </a> <!-- added results button; also replaved the page two cue with a page 6 cue; deleted s -->
+		<a href="#six" onclick="resultPercentage();" class="w3-btn w3-black"> results </a> <!-- added results button; also replaved the page two cue with a page 6 cue; deleted s; changed the code to six -->
 		
 	</div>
 	
@@ -199,7 +174,7 @@ function resultPercentage() {
     	</div>
 </div>
 
-<div class="page" id="eight"> <!-- this produces the results page-->
+<div class="page" id="six"> <!-- this produces the results page;changed ID to six-->
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- codes for results page -->
 		<h1>Results</h1>
 	</div>
